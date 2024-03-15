@@ -1,0 +1,19 @@
+{
+    "name": "Time Worker",
+    "description": "Счёт отработанного времени",
+    "version": "1.0",
+    "manifest_version": 3,
+    "icons": {},
+    "action": {"default_popup": "popup.html"},
+    "permissions": ["scripting", "activeTab"],
+    "background":{},
+    "content_scripts": [
+        {
+            "matches": [
+                "https://alfalservice.bitrix24.ru/*"
+            ],
+            "js": [
+                "background.js"
+            ]
+        }]
+}
