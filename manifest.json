@@ -7,13 +7,5 @@
     "action": {"default_popup": "popup.html"},
     "permissions": ["scripting", "activeTab"],
     "background":{},
-    "content_scripts": [
-        {
-            "matches": [
-                "https://alfalservice.bitrix24.ru/*"
-            ],
-            "js": [
-                "background.js"
-            ]
-        }]
+    "content_scripts": []
 }
